@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benim Portföyüm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+        <button id="theme-toggle">🌙</button>
+        <h1>ERDEM BAYIR</h1>
+      <ul>
+        <li><a href="#hero">Anasayfa</a></li>
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <h2>Merhaba, ben Erdem</h2>
+    <p>Front-end geliştirici & tasarım meraklısı</p>
+  </section>
+
+  <!-- Hakkımda -->
+  <section id="about">
+    <h2>Hakkımda</h2>
+    <p>22 Yaşımda Yeditepe Üniversitesi Network Mezunuyum. Almanca ve İngilizce Dillerine hakimim.</p>
+  </section>
+
+  <!-- Projeler -->
+  <section id="projects">
+    <h2>Projelerim</h2>
+    
+    <!-- Proje 1 -->
+    <div class="project">
+      <h3>Proje 1: Web Tasarımı</h3>
+      <p>Bu projede, modern bir portföy sitesinin tasarımını yaptım. HTML, CSS ve JavaScript kullanarak interaktif bir deneyim sundum.</p>
+      <img src="proje1.jpg" alt="Proje 1 Görseli" />
+      <a href="https://link-to-project1.com" target="_blank">Projeyi Görüntüle</a>
+    </div>
+    
+    <!-- Proje 2 -->
+    <div class="project">
+      <h3>Proje 2: E-ticaret Sitesi</h3>
+      <p>Bu projede, kullanıcı dostu bir e-ticaret sitesinin tasarımını geliştirdim. ReactJS ve Node.js ile dinamik özellikler ekledim.</p>
+      <img src="proje2.jpg" alt="Proje 2 Görseli" />
+      <a href="https://link-to-project2.com" target="_blank">Projeyi Görüntüle</a>
+    </div>
+  </section>
+  
+
+  <!-- İletişim -->
+  <section id="contact">
+    <h2>İletişim</h2>
+    <form>
+      <input type="text" placeholder="Adınız" required>
+      <input type="email" placeholder="E-posta" required>
+      <textarea placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ERDEM BAYIR. Tüm hakları saklıdır.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+  
+    // Tema değiştirme fonksiyonu
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+  
+      // Buton simgesini değiştir
+      if (document.body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️'; // gündüz modu simgesi
+      } else {
+        toggleBtn.textContent = '🌙'; // gece modu simgesi
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</body>
+</html>
